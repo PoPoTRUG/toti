@@ -1,0 +1,14 @@
+_G.TheKey == "original"
+
+if _G.Key ~= _G.TheKey then
+	Player:Kick("Permanent Ban")
+else
+	print("Key")
+end
+
+local args = {
+    [1] = "Join",
+    [2] = _G.Name
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.General.CoalitionRequests:FireServer(unpack(args))
