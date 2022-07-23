@@ -1,5 +1,7 @@
 _G.TheKey == "original"
 
+local Player = game:GetService("Players").LocalPlayer
+
 if _G.Key ~= _G.TheKey then
 	Player:Kick("Permanent Ban")
 else
